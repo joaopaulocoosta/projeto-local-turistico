@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font: var(--paragraph);
 }
 
 :root {
@@ -16,4 +19,33 @@
   --text-secondary: #333333;
   --text-tertiary: #696969; 
   --text-headline: #E1624F;
+
+  --font-family: 'Open sans', 'sans-serif';
+  --h1: 800 36/140% var(--font-family);
+  --h2: 800 32/140% var(--font-family);
+  --h3: 800 28/140% var(--font-family);
+  --h4: 800 16/140% var(--font-family);
+  --paragraph: 400 16/140% var(--font-family);
+  --subtitle: italic 16/140% var(--font-family);
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+
+.container {
+  
+  max-width: 1120px;
+  align-items: center;
+  justify-content: center; /* Centraliza conteúdo interno */
+  margin-top: 80px;
+  padding-block: 14px;
+  /* divisor */
+ 
 }
